@@ -25,9 +25,9 @@
 #define PRODUCT_ID      0x5004
 #define DEVICE_VER      0x0001
 
-#define MANUFACTURER    Keychron
-#define PRODUCT         K6
-#define DESCRIPTION     K6 RGB ANSI
+#define MANUFACTURER    LTC
+#define PRODUCT         NB681
+#define DESCRIPTION     NB681 RGB ANSI
 
 /* key matrix size */
 #define MATRIX_ROWS 5
