@@ -49,6 +49,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                }
 };
 
+void keyboard_pre_init_user(void) {
+    setPinOutput(B9);  // initialize B9 for LED. Stock - Caps Lock
+    setPinOutput(B10);  // initialize B10 for LED. Stock - Fn Lock
+    setPinOutput(B11);  // initialize B10 for LED. Stock - Mac/Win
+    setPinOutput(B12);  // initialize B10 for LED. Stock - Macro
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    switch (get_highest_layer(state)) {
+    case _FN1:
+        writePinHigh(B11);
+        writePinLow(B10);
+        writePinLow(B12);
+        break;
+    case _FN2:
+        writePinHigh(B12);
+        writePinLow(B10);
+        writePinLow(B11);
+        break;
+    default: //  for any other layers, or the default layer
+        writePinHigh(B10);
+        writePinLow(B11);
+        writePinLow(B12);
+        break;
+    }
+  return state;
+}
+
 void keyboard_post_init_user(void) {
   // Customise these values to desired behaviour
   //debug_enable=true;
