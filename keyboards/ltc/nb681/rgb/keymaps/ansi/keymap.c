@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   {   KC_LSPO,   KC_NO,     KC_Z,      KC_X,    KC_C,     KC_V,    KC_B,     KC_N,    KC_M,    KC_COMM,   KC_DOT,    KC_SLSH,   KC_RSPC,   KC_NO,     KC_UP,     KC_NO },
                   {   KC_LCTL,   KC_LGUI,   KC_LALT,   KC_NO,   KC_NO,    KC_NO,   KC_SPC,   KC_NO,   KC_NO,   KC_NO,     KC_RALT,   MO(_FN2),  KC_RCTRL,  KC_LEFT,   KC_DOWN,   KC_RGHT   }
                 },
-      [_FN1] = {  {   KC_GESC,   KC_NO,     KC_NO,     KC_NO,   KC_NO,    KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,     KC_MUTE,   KC_VOLD,   KC_VOLU,   KC_TRNS,   KC_NO,     KC_NO    },
+      [_FN1] = {  {   KC_GESC,   KC_NO,     KC_NO,     KC_NO,   KC_NO,    KC_NO,   KC_NO,    KC_MPRV, KC_MPLY, KC_MNXT,   KC_MUTE,   KC_VOLD,   KC_VOLU,   KC_TRNS,   KC_NO,     KC_NO    },
                   {   KC_NO,     KC_NO,     KC_NO,     KC_NO,   KC_NO,    KC_NO,   KC_NO,LSFT(KC_MINS),KC_UP,  KC_NO,     KC_NO,     KC_NO,     KC_NO,     KC_NO,     KC_NO,     KC_NO  },
                   {   KC_NO,     ATM,       GITSS,     KC_NO,   KC_NO,    KC_NO,   KC_NO,    KC_LEFT, KC_DOWN, KC_RGHT,   KC_NO,     KC_NO,     KC_NO,     KC_TRNS,   KC_NO,     KC_NO    },
                   {   KC_TRNS,   KC_NO,     KC_NO,     KC_NO,   KC_NO,    KC_NO,   GITB,     KC_BTN1, KC_BTN2, KC_NO,     KC_NO,     KC_NO,     KC_NO,     KC_NO,     KC_TRNS,   KC_NO  },
